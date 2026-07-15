@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>自己紹介</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="site-logo">Profile</span>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="profile-card" id="profileCard">
+      <div class="profile-avatar-wrap">
+        <img
+          src="assets/profile.jpg"
+          alt="プロフィール写真"
+          class="profile-avatar"
+          onerror="this.style.display='none'; document.querySelector('.avatar-placeholder').style.display='flex';"
+        />
+        <div class="avatar-placeholder" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+            <circle cx="32" cy="24" r="14" fill="#94a3b8"/>
+            <ellipse cx="32" cy="58" rx="22" ry="14" fill="#94a3b8"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="profile-body">
+        <h1 class="profile-name">山田 太郎</h1>
+        <p class="profile-title">ソフトウェアエンジニア</p>
+        <hr class="divider" />
+        <p class="profile-bio">
+          はじめまして。山田太郎と申します。<br />
+          Web アプリケーションの開発を中心に活動しており、フロントエンドからバックエンドまで幅広く対応しています。
+          ユーザーにとって使いやすく、信頼性の高いサービス作りを大切にしています。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 山田 太郎</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
